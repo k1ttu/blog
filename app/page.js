@@ -4,16 +4,8 @@ import JournalTopics from '@/components/journalHeading';
 import 'animate.css';
 import Link from 'next/link';
 
-export default function Home(){
-  return(
-    <>
-    Hello
-    </>
-  )
-}
 
-
- {/*export default function Home() {
+ export default function Home() {
   const contentFont = "md:text-lg text-base text-gray-700 font-light my-4 mr-8 ";
   return (
     <>
@@ -57,4 +49,4 @@ export default function Home(){
       </footer>
       </>
   )
-}*/}
+}
