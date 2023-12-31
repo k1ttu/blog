@@ -10,7 +10,7 @@ export const JournalContent = async () => {
 
         <ul className='list-none flex flex-col justify-stsar my-10 journal-content'>
             {
-                postsss1?.map((item) => {
+                postsss1?.reverse().map((item) => {
                     return (
                         <li key={item._id} id={item._id} className={'mb-14 ' + ' items-start justify-start relative py-3 pb-1 px-0 mx-0 after:bg-gray-600 after:absolute after:h-px after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer'} >
                             <Link href={`./journal/${encodeURIComponent(item._id)}/`} className='no-underline'>
@@ -26,8 +26,8 @@ export const JournalContent = async () => {
                                     {item.datePosted ? item.datePosted : "no date found"}
                                 </div>
                                 <div className={contentFont2 + "text-left"}>
-                                    <p className={contentFont + "line-clamp-4"}>
-                                        {item.content ? item.content.at(0) : "No content found"}.....
+                                    <p className={contentFont + "line-clamp-3"}>
+                                        {item.content ? item.content.at(0) : "No content found"}........
                                     </p>
                                 </div>
                             </Link>
