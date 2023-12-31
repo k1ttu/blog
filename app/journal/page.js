@@ -17,10 +17,7 @@ export default function Journal() {
                 I'm not a professional or an experienced writer but I like to write poems, about my life or about stuff I find interesting, I also write short write-ups about my personal philosophies that I usually come up with after 4th joint (for legal reasons, that's a joke).
             </p>
             <p className={contentFont + "animate__animated animate__fadeIn animate__delay-2s"}>
-                I'm also trying my hand in music, might update my progress here in the future. If you like to read, consider going through my posts and let me know what your think, you can mail me directly or just add a comment under the posts.
-            </p>
-            <p className={contentFont + 'animate__animated animate__fadeIn animate__delay-2s'}>
-                If you like to read, consider going through my posts and let me know what your think, you can mail me directly or just add a comment under the posts.
+                I'm also trying my hand in music, might update my progress here in the future. If you like to read, consider going through my posts and let me know what your think, you can mail me directly or just hit me up on one of my socials.
             </p>
 
             <div className='w-full items-start animate__animated animate__fadeIn animate__delay-2s'>
