@@ -1,5 +1,5 @@
 export default async function getPosts1(){
-    const url = process.env.API_URL
+    let url = process.env.API_URL
     try{
         const response = await fetch(`${url}/api/posts`,
         {

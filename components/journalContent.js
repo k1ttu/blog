@@ -1,14 +1,9 @@
-
 import getPosts1 from "@/controllers/getPosts";
-import getPostss, { getPosts } from "@/controllers/getPosts";
 import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 export const JournalContent = async () => {
     const postsss1 = await getPosts1();
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-
+    
     const contentFont = "md:text-lg text-base text-gray-700 font-light my-4 mb-3 ";
     const contentFont2 = "md:text-lg text-base text-gray-700 font-light my-4 mb-3 ";
     return (

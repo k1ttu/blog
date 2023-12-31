@@ -1,10 +1,9 @@
 'use client'
-
 import Link from 'next/link';
 import { useState } from 'react';
-
 import { Offcanvas } from 'react-bootstrap';
 import { useRouter } from 'next/navigation';
+
 export default function Navbar3() {
     const [show, setShow] = useState(false);
     const navlink2 = " text-2xl text-gray-600 my-3 animate__animated";

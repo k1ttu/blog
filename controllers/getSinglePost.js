@@ -1,5 +1,5 @@
 export default async function getSinglePost1(id){
-    const url = process.env.API_URL
+    let url = process.env.API_URL
     try{
         const response= await fetch(`${url}/api/posts/${id}`, {
             cache:'no-store'
