@@ -4,8 +4,16 @@ import JournalTopics from '@/components/journalHeading';
 import 'animate.css';
 import Link from 'next/link';
 
+export default function Bro(){
+  return (
+    <>
+    Hello Saar
+    </>
+  )
+}
 
- export default function Home() {
+
+{/*function Home() {
   const contentFont = "md:text-lg text-base text-gray-700 font-light my-4 mr-8 ";
   return (
     <>
@@ -49,4 +57,4 @@ import Link from 'next/link';
       </footer>
       </>
   )
-}
+}*/}
