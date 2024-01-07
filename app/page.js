@@ -20,8 +20,8 @@ export default function Home() {
         </div>
 
       </main>
-      <hr className=' mt-auto mx-10 md:mx-16 w-full' />
-      <footer className='absolute bottom-0  mx-10 md:mx-16 my-10'>
+      <hr className=' mx-10 md:mx-16 ' />
+      <footer className=' mt-auto bottom-0  mx-10 md:mx-16 '>
         <div>
 
         </div>

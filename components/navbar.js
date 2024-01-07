@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
 import { useRouter } from 'next/navigation';
+import React from "react";
 
 export default function Navbar3() {
     const [show, setShow] = useState(false);
@@ -13,9 +14,8 @@ export default function Navbar3() {
     const navHover = "relative after:bg-gray-600 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer"
     const handleClose = () => {
         setShow(false)
-        router.refresh();
     };
-    const handleShow = () => setShow(true);
+    const handleShow = () => setShow(!show);
 
     const navbarDB = [
         {
@@ -68,10 +68,10 @@ export default function Navbar3() {
                 <div className={"bar block h-[3px] w-full rounded-md bg-black my-1 "}></div>
             </button>
 
-            <Offcanvas className="md:hidden bg-bgbg" show={show} onHide={handleClose} placement='start' responsive='md'>
+            <Offcanvas className="md:hidden block bg-bgbg" show={show} onHide={handleShow} placement='start' responsive='md'>
                 <Offcanvas.Header closeButton >
                 </Offcanvas.Header>
-                <Offcanvas.Body className='md:hidden'>
+                <Offcanvas.Body className='md:hidden visible'>
                     <ul className='my-48'>
                         {
                             navbarDB.map((item, index) => (
