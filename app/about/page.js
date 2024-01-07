@@ -3,17 +3,17 @@ import 'animate.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-
+import pic2 from './pic12.jpg';
 
 export default function About() {
     const contentFont = "md:text-lg text-base text-gray-700 font-light my-4";
     const contentSpan = "underline-offset-2 underline";
     return (
         <main className='flex flex-col md:flex-row w-full md:justify-between justify-center my-10 align-top'>
-                {/* <Image src={pic2}
+                <Image src={pic2}
                     className=" w-2/3 md:h-2/4 md:w-2/5 md:mx-20 animate__animated animate__fadeIn animate__slow self-center md:self-auto "
                 alt="it's supposed to be a picture of myself, meh."
-                /> */}
+                />
                 <div className='justify-start flex flex-col align-top md:w-2/5 w-2/3 md:mx-10 mx-10 animate__animated animate__fadeInUp animate__delay-1s animate__fast md:my-0 my-10'>
                     <h1 className='text-3xl md:text-4xl md:mb-5 mb-3 lg:text-5xl text-gray-700 '>Hi, I'm Chirag</h1>
                     <p className={contentFont}>
