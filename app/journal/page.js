@@ -9,7 +9,7 @@ export default function Journal() {
     const contentFont2 = "md:text-lg text-base text-gray-700 font-light my-4 mb-3 ";
 
     return (
-        <main className='flex align-top flex-col items-center md:text-center mx-10 my-10 md:mx-16 lg:mx-32 md:my-10 lg:my-20'>
+        <main className=' bg-bgbg flex align-top flex-col items-center md:text-center mx-10 my-10 md:mx-16 lg:mx-32 md:my-10 lg:my-20'>
             <h1 className='text-3xl md:text-4xl md:mb-6 lg:mb-7 mb-5 lg:text-5xl text-gray-700 animate__animated animate__fadeInDown animate__delay-1s'>
                 My Blog
             </h1>

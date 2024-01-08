@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Offcanvas } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useRouter } from 'next/navigation';
 import React from "react";
 
@@ -38,11 +39,11 @@ export default function Navbar3() {
                 Chirag
             </Link>
 
-            <ul className='md:flex hidden list-none'>
+            <ul className='md:flex hidden list-none '>
                 {
                     navbarDB.map((item, index) => {
                         return (
-                            <li key={index} className={'mr-5'} >
+                            <li key={index} className={'mr-5 '} >
                                 <Link href={item.link} className={navlink}>
 
                                     {item.title}
@@ -62,10 +63,8 @@ export default function Navbar3() {
                 </li>
             </ul>
 
-            <button className='block md:hidden cursor-pointer w-9 h-9 bg-none appearance-none relative' variant="primary" onClick={handleShow}>
-                <div className={"bar block h-[3px] w-full rounded-md my-1 bg-black "} ></div>
-                <div className={"bar block h-[3px] w-full rounded-md my-1 bg-black "}></div>
-                <div className={"bar block h-[3px] w-full rounded-md bg-black my-1 "}></div>
+            <button className='block md:hidden' variant="primary" onClick={handleShow}>
+                Launch
             </button>
 
             <Offcanvas className="md:hidden block bg-bgbg" show={show} onHide={handleShow} placement='start' responsive='md'>
@@ -86,6 +85,8 @@ export default function Navbar3() {
                     </ul>
                 </Offcanvas.Body>
             </Offcanvas>
+
+
         </nav>
 
     );
