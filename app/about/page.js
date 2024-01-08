@@ -16,7 +16,7 @@ export default function About() {
                 alt="it's supposed to be a picture of myself, meh."
                 />
                 <div className='justify-start flex flex-col align-top md:w-2/5 w-2/3 md:mx-10 mx-10 animate__animated animate__fadeInUp animate__delay-1s animate__fast md:my-0 my-10'>
-                    <h1 className='text-3xl md:text-4xl md:mb-5 mb-3 lg:text-5xl text-gray-700 '>Hi, I'm Chirag</h1>
+                    <h1 className='font text-3xl md:text-4xl md:mb-5 mb-3 lg:text-5xl text-gray-700'>Hi, I'm Chirag</h1>
                     <p className={contentFont}>
                         Currently a Sophomore pursuing <span className={contentSpan}>Bachelor's in Mathematics and Computing Engineering</span> from <span className={contentSpan}>Delhi Technological University</span>.
                     </p>

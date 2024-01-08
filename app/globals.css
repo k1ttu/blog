@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-start-rgb: 246	238	227;
@@ -20,6 +22,10 @@
   align-items: center;
 }
 
-html,body {
+html{
   background:  rgb(var(--background-end-rgb));
+
+}
+.font{
+  font-family: 'Playfair Display', serif;
 }
