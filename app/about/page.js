@@ -11,7 +11,8 @@ export default function About() {
     return (
         <main className='flex flex-col md:flex-row w-full md:justify-between justify-center my-10 align-top'>
                 <Image src={pic2}
-                    className=" w-2/3 md:h-2/4 md:w-2/5 md:mx-20 animate__animated animate__fadeIn animate__slow self-center md:self-auto "
+                    className=" w-2/3 md:h-2/4 md:w-2/5 md:mx-20 animate__animated animate__fadeIn
+                    animate__delay-1s  animate__slow self-center md:self-auto "
                 alt="it's supposed to be a picture of myself, meh."
                 />
                 <div className='justify-start flex flex-col align-top md:w-2/5 w-2/3 md:mx-10 mx-10 animate__animated animate__fadeInUp animate__delay-1s animate__fast md:my-0 my-10'>

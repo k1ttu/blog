@@ -28,6 +28,11 @@ export default function Navbar3() {
             title: "Blog",
             id: "Blog",
             link: "/journal"
+        },
+        {
+            title: "Contact",
+            id: "Contact",
+            link: "mailto:chirag.kun@icloud.com"
         }
     ]
     const router = useRouter();
@@ -42,40 +47,49 @@ export default function Navbar3() {
             <ul className='md:flex hidden list-none '>
                 {
                     navbarDB.map((item, index) => {
-                        return (
-                            <li key={index} className={'mr-5 '} >
-                                <Link href={item.link} className={navlink}>
+                        if (index != 2) {
+                            return (
+                                <li key={index} className={'mr-5 '} >
+                                    <Link href={item.link} className={navlink}>
 
-                                    {item.title}
+                                        {item.title}
 
-                                </Link>
-                            </li>)
+                                    </Link>
+                                </li>
+                            )
+                        }
+                        else {
+                            return (
+                                <li key={index} className={'mr-0'} >
+                                    <Link href={item.link} className={navlink}>
+                                        {item.title}
+                                    </Link>
 
+                                </li>
+                            )
+                        }
                     }
                     )
                 }
 
-                <li key={"3"} className={'mr-0'} >
-                    <Link href="mailto:chirag.kun@icloud.com" className={navlink}>
-                        Contact
-                    </Link>
 
-                </li>
             </ul>
 
-            <button className='block md:hidden' variant="primary" onClick={handleShow}>
-                Launch
+            <button className='block md:hidden cursor-pointer w-9 h-9 bg-none appearance-none relative' variant="primary" onClick={handleShow}>
+                <div className={"bar block h-[3px] w-full rounded-md my-1 bg-black "} ></div>
+                <div className={"bar block h-[3px] w-full rounded-md my-1 bg-black "}></div>
+                <div className={"bar block h-[3px] w-full rounded-md bg-black my-1 "}></div>
             </button>
 
             <Offcanvas className="md:hidden block bg-bgbg" show={show} onHide={handleShow} placement='start' responsive='md'>
-                <Offcanvas.Header closeButton >
+                <Offcanvas.Header className=' bg-bgbg' closeButton >
                 </Offcanvas.Header>
-                <Offcanvas.Body className='md:hidden visible'>
-                    <ul className='my-48'>
+                <Offcanvas.Body className='md:hidden bg-bgbg visible'>
+                    <ul className=''>
                         {
                             navbarDB.map((item, index) => (
-                                <li key={index} className={'items-center'} onClick={handleClose} >
-                                    <Link href={item.link} className={navlink + "text-5xl"}>
+                                <li key={index} className={' my-10'} onClick={handleClose} >
+                                    <Link href={item.link} className={"text-2xl  font-mono no-underline text-gray-600 "}>
                                         {item.title}
                                     </Link>
                                 </li>
