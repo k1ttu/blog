@@ -18,7 +18,7 @@ export default async function Post({ params: { id } }) {
             </div>
             <div className="my-10">
                 {post?.content?.map((item, index) => (
-                    <p key={index} className={contentFont2 + "animate__animated animate__fadeIn animate__delay-2s"}>
+                    <p key={index} className={contentFont2 + "animate__animated animate__fadeIn animate__delay-2s md:mx-10 md:px-10"}>
                         {item ? item : "Content not found"}
                     </p>
                 ))}

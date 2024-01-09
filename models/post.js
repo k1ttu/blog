@@ -15,7 +15,7 @@ var PostSchema = new Schema(
         datePosted:{
             type:String,
             trim:true,
-            required:true
+            default:Date.now
         }
     },
     {
